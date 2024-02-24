@@ -1,0 +1,3 @@
+FROM mangoo1/gemma:gpubase
+COPY gemma-7b/* ./
+CMD ["python", "app.py"]

@@ -1,0 +1,7 @@
+FROM python:3.8
+RUN pip install accelerate transformers
+RUN pip install -i https://pypi.org/simple/ bitsandbytes
+RUN pip install optimum
+WORKDIR /app
+COPY gemma-cpu-2b/* ./
+CMD ["python", "app.py"]

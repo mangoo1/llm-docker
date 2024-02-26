@@ -18,6 +18,9 @@ sudo docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=6710886
 
 # Running Gemma 2b with CPU
 
+### Get the permission grant and clone the Gemma to the current folder
+https://huggingface.co/google/gemma-2b-it
+
 ### Build the CPU image
 sudo docker build -t mangoo1/gemma:cpu2b . -f docker/Dockerfile.cpu2b
 
